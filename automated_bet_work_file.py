@@ -19,10 +19,10 @@ from selenium.common.exceptions import NoSuchElementException
 
 
 # Initialize the TelegramClient and start it
-api_id = '23317846'
-api_hash = '12d80397ff6d8314ec87573648141263'
-phone = '+359896351507'
-channel_username = 'BetPracticeStudioBot'
+api_id = ''
+api_hash = 
+phone = '
+channel_username = '
 
 client = TelegramClient(phone, api_id, api_hash)
 processed_message_ids = set()
@@ -130,8 +130,8 @@ def selenium_thread(finished_event, extracted_text):
         username_field = driver.find_element(By.XPATH, username_xpath)
         password_field = driver.find_element(By.XPATH, password_xpath)
 
-        username_field.send_keys("Ispaneca1984")
-        password_field.send_keys("Edsl@v0v")
+        username_field.send_keys("")
+        password_field.send_keys("")
         password_field.send_keys(Keys.RETURN)
         time.sleep(6)
 
